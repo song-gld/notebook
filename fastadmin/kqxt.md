@@ -7,3 +7,10 @@
      RewriteCond %{REQUEST_FILENAME} !-f
      RewriteRule ^(.*)$ index.php?s=/$1 [QSA,PT,L]
     </IfModule>
+## 二、前端使用后端生成的bootstraptable时需要将backend控制器中的相应变量和方法复制到frontend中。
+    两个变量：
+    protected $relationSearch = false;
+    protected $dataLimit = false;
+    两个方法：
+    function buildparams
+    function getDataLimitAdminIds
