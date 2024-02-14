@@ -14,3 +14,5 @@
     两个方法：
     function buildparams
     function getDataLimitAdminIds
+## 三、js中的注意事项
+如果在html中使用组件时应加入 Form.api.bindevent($("form[role=form]")); 这段代码。
