@@ -16,3 +16,7 @@
     function getDataLimitAdminIds
 ## 三、js中的注意事项
 1.如果在html中使用组件时应加入 Form.api.bindevent($("form[role=form]")); 这段代码。
+## 四、控制器相关
+1.控制器中在数据库添加数据后，需加入
+    $thsi->success();
+这行语句，才会判断数据插入成功。
